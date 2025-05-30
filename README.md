@@ -1,51 +1,52 @@
-# Sorteador de Números Mega Sena
+# Mega Sena Number Picker
 
-## Descrição
+## Description
 
-Este programa simula a geração de números aleatórios para o sorteio da **Mega Sena**. O usuário pode inserir o número do jogo vencedor, e o script irá gerar diversos bilhetes aleatórios. O programa irá comparar cada bilhete gerado com o número vencedor e mostrar quantos acertos (3, 4 ou 5) ocorreram, além de contar o número de vezes que você ganhou (com todos os 6 números). Também serão exibidos os números de **Quinas** (5 acertos), **Quadras** (4 acertos) e **Triplas** (3 acertos).
+This program simulates the generation of random numbers for the **Mega Sena** lottery draw. The user can input the winning numbers, and the script will generate several random tickets. The program compares each generated ticket with the winning numbers and displays how many matches (3, 4, or 5) occurred. It also counts how many times you won (by matching all 6 numbers). The program will also display the number of **"Quinas"** (5 matches), **"Quadras"** (4 matches), and **Triples** (3 matches).
 
-## Funcionalidades
+## Features
 
-- **Geração de Números Aleatórios**: Gera números aleatórios (6 números entre 1 e 60) para cada bilhete.
-- **Entrada de Números Vencedores**: O usuário pode inserir os números vencedores.
-- **Contagem de Acertos**: O programa compara cada bilhete gerado com os números vencedores, contando quantos números coincidem.
-- **Exibição de Resultados**: Exibe o número de vitórias (todos os 6 números), Quinas (5 acertos), Quadras (4 acertos) e Triplas (3 acertos).
+* **Random Number Generation**: Generates 6 random numbers between 1 and 60 for each ticket.
+* **Winning Numbers Input**: The user can input the winning numbers.
+* **Match Count**: The program compares each ticket with the winning numbers and counts how many numbers match.
+* **Result Display**: Displays the number of wins (all 6 numbers), Quinas (5 matches), Quadras (4 matches), and Triples (3 matches).
 
-## Como Usar
+## How to Use
 
-1. **Inicie o Programa**: Execute o script.
-2. **Informe a Quantidade de Jogos**: O programa pedirá quantos jogos você deseja sortear.
-3. **Digite os Números Vencedores**: O programa pedirá para você inserir os números vencedores (6 números entre 1 e 60), separados por espaço.
-4. **Resultados**: O programa irá gerar os jogos e mostrar os acertos em cada um, além de contar as vitórias e os acertos.
+1. **Start the Program**: Run the script.
+2. **Enter the Number of Tickets**: The program will ask how many tickets you want to generate.
+3. **Enter the Winning Numbers**: The program will ask you to input the 6 winning numbers (between 1 and 60), separated by spaces.
+4. **View Results**: The program will generate the tickets, compare them, and display the number of matches and wins.
 
-## Exemplo de Execução
+## Example Output
 
 ```text
-Quantos jogos deseja sortear
-R: 5
+How many tickets do you want to generate?
+A: 5
 
-Digite o numero do jogo vencedor com espaços
-Exp: "10 20 30 40 50 60"
-R: 10 20 30 40 50 60
+Enter the winning numbers separated by spaces
+Ex: "10 20 30 40 50 60"
+A: 10 20 30 40 50 60
 
-00001)  05  10  15  20  30  40 | Acertos: 4
-00002)  01  08  13  14  22  60 | Acertos: 3
-00003)  10  20  30  40  50  60 | Acertos: 6 (Ganhou!)
+00001)  05  10  15  20  30  40 | Matches: 4  
+00002)  01  08  13  14  22  60 | Matches: 3  
+00003)  10  20  30  40  50  60 | Matches: 6 (Winner!)  
 ...
-Numero de jogos ganhos: 1
-Numero de quinas: 0
-Numero de quadras: 0
-Numero de triplas: 1
+Number of winning tickets: 1  
+Number of Quinas: 0  
+Number of Quadras: 0  
+Number of Triples: 1  
 ```
 
-## Requisitos
+## Requirements
 
-- Python 3.x
+* Python 3.x
 
-## Como Rodar o Script
+## How to Run the Script
 
-1. **Instalar o Python**: Certifique-se de que o Python 3.x está instalado em seu computador.
-2. **Executar o Script**: Abra o terminal e execute o arquivo Python:
+1. **Install Python**: Make sure Python 3.x is installed on your computer.
+2. **Run the Script**: Open the terminal and execute the Python file:
+
    ```bash
    python sorteio_mega_sena.py
    ```
